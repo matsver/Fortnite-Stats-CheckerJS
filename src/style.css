@@ -1,0 +1,37 @@
+p {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#statwins {
+  color: lime;
+}
+
+#stattop3 {
+  color: green;
+}
+
+#stattop5 {
+  color: blue;
+}
+
+#stattop10 {
+  color: darkmagenta;
+}
+
+#statkd {
+  color: yellow;
+}
+
+#statwl {
+  color: orange;
+}
+
+#statpm {
+  color: red;
+}
+
+#statkills {
+  color: gold;
+}

@@ -5,28 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script>
-  window.$ = window.jQuery = require('jquery');
-</script>
+  <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <title>Fortnite Stats Checker</title>
 </head>
 
 <body>
+<script>
+  window.$ = window.jQuery = require('jquery');
+</script>
   <div class="main">
     <div class="inputname">
       <input type="text" id="username" placeholder="username" value="">
       <button onclick="fetch()">GO!</button>
+      <p id="error"></p>
     </div>
     <div class="inputconsole">
       <select id="selection">
         <option value="psn">PS4</option>
-        <option value="xbx">XBOX</option>
+        <option value="xbl">XBOX</option>
         <option value="pc">PC</option>
       </select>
     </div>
-<textarea rows="4" cols="50" id="area">
-</textarea>
+    <p id="statwins">Wins: 0</p>
+    <p id="stattop3">Top 3: 0</p>
+    <p id="stattop5">Top 5: 0</p>
+    <p id="stattop10">Top 10: 0</p>
+    <p id="statkd">K/D: 0.00%</p>
+    <p id="statwl">W/L: 0.00%</p>
+    <p id="statpm">Played matches: 0</p>
+    <p id="statkills">Kills: 0</p>
   </div>
 </body>
 

@@ -1,16 +1,21 @@
 function fetch() {
-  var console = $("#selection option:selected").val();
+  var cons = $("#selection option:selected").val();
   var uname = $("#username").val();
-  $("#area").val(uname + console);
-  req(uname, console);
+  req(uname, cons);
 }
 
 function req(user, device) {
   const config = require('./config.json');
   var request = require('request');
-  request.get(config.url).on('response', function (response) {
-    console.log(response.statusCode) // 200
-    console.log(response.headers['content-type']) // 'image/png'
-    $("#area").val(response.statusCode);
-  })
+  var options = {
+    url: config.url + device + "/" + user,
+    headers: {
+      'TRN-Api-Key': config.key,
+    }
+  };
+  request(options, function (error, response, body) {
+    console.log('error:', error); // Print the error if one occurred
+    console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+    console.log('body:', body);
+  });
 }
