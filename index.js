@@ -7,10 +7,10 @@ let win
 
 function createWindow() {
   win = new BrowserWindow({
-    width: 800,
-    height: 600
+    width: 400,
+    height: 300
   })
-  win.loadFile('index.html')
+  win.loadFile('src/index.html')
   win.on('closed', () => {
     win = null
   })

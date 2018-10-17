@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/Matsverheyen/Fortnite-Stats-CheckerJS#readme",
   "devDependencies": {
-    "electron": "^3.0.4"
+    "electron": "^3.0.4",
+    "electron-connect": "^0.6.3"
+  },
+  "dependencies": {
+    "electron-reload": "^1.2.5",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.2.0"
   }
 }
