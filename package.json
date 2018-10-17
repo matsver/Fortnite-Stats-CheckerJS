@@ -1,0 +1,25 @@
+{
+  "name": "fornitestatscheckerjs",
+  "version": "1.0.0",
+  "description": "Fortnite Stats checker made with Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matsverheyen/Fortnite-Stats-CheckerJS.git"
+  },
+  "keywords": [
+    "Fornite"
+  ],
+  "author": "Mats Verheyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Matsverheyen/Fortnite-Stats-CheckerJS/issues"
+  },
+  "homepage": "https://github.com/Matsverheyen/Fortnite-Stats-CheckerJS#readme",
+  "devDependencies": {
+    "electron": "^3.0.4"
+  }
+}
